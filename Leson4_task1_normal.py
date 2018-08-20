@@ -3,8 +3,8 @@
 #
 import re
 #описание проверочных выражений
-Name_rule = '^[A-ZА-Я][a-zа-я]+'
-Surename_rule = '^[A-ZА-Я][a-zа-я-]+'
+Name_rule = '^[A-ZА-Я][a-zа-я]+$'
+Surename_rule = '^[A-ZА-Я][a-zа-я-]+$'
 email_rule = '[a-z_0-9]+@[a-zA-Z-]+\.(ru|org|com)'
 pattern=(Name_rule, Surename_rule, email_rule)
 #Создание списков с вопросами и значениями Имени, Фамилии и e-mail
